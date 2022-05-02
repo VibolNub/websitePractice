@@ -5,6 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script>
+        function f1(){
+            var name = document.getElementById('user').value
+            var password = document.getElementById('pass').value
+
+            if (name == "Vibol" && password == "2003"){
+                alert('Correct!')
+                location.replace("pages/home.html")
+            }
+            else{
+                alert('Wrong Username or Password! \nTry again!')
+                //window.open('pages/home.html');
+                
+            }
+        }
+
+
+    </script>
     <title>Vibol - Homepage</title>
 </head>
 <body>
@@ -18,11 +36,11 @@
         <div class="container1-2">
             <h1>Please Enter Username and Password</h1>
             <div id="txtBox">
-        <input type="Username" placeholder="Username..." class="txtbx">
-        <input type="password" placeholder="Password..." class="txtbx">
+        <input type="Username" placeholder="Username..." class="txtbx" id="user">
+        <input type="password" placeholder="Password..." class="txtbx" id="pass">
             </div>
             <div class="button1">
-        <button id="login">Login</button>
+        <button id="login" onclick="f1()">Login</button>
         <button id="calcel">Cancel</button></div></div>
     </div>
 </body>

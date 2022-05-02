@@ -66,12 +66,11 @@ h1{
   100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 
-
 .txtbx{
     width: 300px;
     font-family: ubuntu;
     height: 30px;
-    padding: 5px;
+    padding: 10px;
     font-size: 1.2rem;
     border: none;
     border-radius: 10px;
@@ -80,7 +79,6 @@ h1{
 .button1{
     margin-top: 30px;
 }
-
 button{
     background-color: aliceblue;
     outline: none;
