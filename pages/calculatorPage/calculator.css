@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Lobster&family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: ABeeZee;
+    background: linear-gradient(to bottom right, #E8CBC0, #636FA4);
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.containerMain{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.containerMain button{
+    cursor: pointer;
+    background:#0F2027;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin: 2px;
+}
+.containerMain button:hover{
+    background:#23363e;
+}
+.containerMain button:active{
+    background-color: #577886;
+}
+#btnEqual{
+    width: 205px;
+}
+
+.containerMain button a{
+    text-decoration: none;
+    font-family: ABeeZee;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+.containerSmall{
+    display: flex;
+    flex-direction: row;
+}
+.container5{
+    display: flex;
+    flex-direction: column;
+}
+.containerMain1{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    width: 100px;
+    height: 100px;
+}
+.containerResult{
+    display: flex;
+    justify-content: center;
+
+}
+#txtResult{
+    width: 400px;
+}
