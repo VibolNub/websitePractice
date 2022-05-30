@@ -9,42 +9,37 @@
     <script src="https://kit.fontawesome.com/7c8fc547cc.js" crossorigin="anonymous"></script> 
 </head>
 <body>
-    <div class="containerResult">
-        <input type="text"  id="txtResult">
-    </div>
-    <div class="containerMain">
-       
-        <div class="containerMain1">
-            
-            <div class="container1 containerSmall">
-                <button><a href="#">1</a></button>
-                <button><a href="#">2</a></button>
-                <button><a href="#">3</a></button>
+    <div class="hero">
+        <div class="container">
+            <div class="resultContainer">
+                <input type="text" id="operator">
+                <input type="text" id="result">
             </div>
-            <div class="container2 containerSmall">
-                <button><a href="#">4</a></button>
-                <button><a href="#">5</a></button>
-                <button><a href="#">6</a></button>
+            <div class="margin"></div>
+            <div class="calculator">
+                <button onclick="clearAll()" id="clear">C</button>
+                <button class="ops" onclick="clearResult()">CL</button>
+                <button class="ops" onclick="btnPercent()" id="btnPercent">%</button>
+                <button class="ops" onclick="btnDevide()" id="btnDevide">/</button>
+                <button onclick="clickBtn1()" id="num1">1</button>
+                <button onclick="clickBtn2()" id="num2">2</button>
+                <button onclick="clickBtn3()" id="num3">3</button>
+                <button class="ops" onclick="btnMulti()" id="btnMulti">*</button>
+                <button onclick="clickBtn4()" id="num4">4</button>
+                <button onclick="clickBtn5()" id="num5">5</button>
+                <button onclick="clickBtn6()" id="num6">6</button>
+                <button class="ops" onclick="btnAdd()" id="btnAdd">+</button>
+                <button onclick="clickBtn7()" id="num7">7</button>
+                <button onclick="clickBtn8()" id="num8">8</button>
+                <button onclick="clickBtn9()" id="num9">9</button>
+                <button class="ops" onclick="btnMinus()" id="btnMinus">-</button>
+                <button onclick="BtnDot()" id="BtnDot">.</button>
+                <button onclick="clickBtn0()" id="num0">0</button>
+                <button onclick="clickBtn00()" id="num00">00</button>
+                <button id="equal" onclick="calculate()">=</button>
             </div>
-            <div class="container3 containerSmall">
-                <button><a href="#">7</a></button>
-                <button><a href="#">8</a></button>
-                <button><a href="#">9</a></button>
-            </div>
-            <div class="container4 containerSmall">
-                <button id="btnEqual"><a href="#">0</a></button>
-                <button><a href="#">=</a></button>
-            </div>
-            
         </div>
-        <div class="container5">
-            <button><a href="#">+</a></button>
-            <button><a href="#">-</a></button>
-            <button><a href="#">*</a></button>
-            <button><a href="#">/</a></button>
-        </div>
-           
-        
     </div>
+    <script src="calculator.js"></script>
 </body>
 </html>
