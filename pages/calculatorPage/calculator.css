@@ -8,15 +8,20 @@
 .hero{
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     height: 100vh;
     align-items: center;
     font-family: 'Poppins', sans-serif;
+    background: url('https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3874.jpg?t=st=1653896891~exp=1653897491~hmac=65e0f13247485702d3e89bc87bab9bd1d4450925dc0af07fae05e2e955f010cc&w=1060');
+    background-size: cover;
 }
 .container{
 
     width: 400px;
-    background-color: #0c2742;
+    /* background-color: #0c2742; */
+    background-color: #ffffff1d;
+    backdrop-filter: blur(10px);
     border-radius: 20px;
     padding: 20px;
     height: min-content;
@@ -49,7 +54,7 @@
 #operator{
     font-family: poppins;  
     font-size: 1.3rem;
-    color: rgb(162, 162, 162);
+    color: #bf00ff6e;
     font-weight: 500;
 }
 #result{
@@ -80,7 +85,7 @@
     background: rgb(255, 255, 141);
 }
 .ops{
-    color: #1ec0fe;
+    color: #c000ff;
 }
 .ops:hover{
     color: white;
@@ -90,4 +95,14 @@ button{
 }
 #clear{
     color: orange;
+}
+footer p{
+    font-family: poppins;
+    color: #0c2742;
+    padding-top: 20px;
+}
+footer p::selection{
+    
+    background-color: black;
+    color: white;
 }

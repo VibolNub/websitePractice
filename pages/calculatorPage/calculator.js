@@ -4,7 +4,7 @@ function clearAll() {
     document.getElementById("result").value = "";
 }
 function clearResult(){
-    document.getElementById("result").value = "";
+    document.getElementById("operator").value = "";
 }
 function clickBtn1(){
     var num = document.getElementById("num1").innerHTML;
